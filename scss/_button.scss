@@ -1,0 +1,24 @@
+.row-category-btn {
+    .btn-primary,
+    .btn-primary:hover,
+    .btn-primary:active,
+    .btn-primary:visited,
+    .btn-primary:focus {
+        background-color: $secondary-color !important;
+        border: 2px solid $button-1 !important;
+    }
+}
+
+.search, .add, .save{
+    &.btn-secondary,
+    &.btn-secondary:hover,
+    &.btn-secondary:active,
+    &.btn-secondary:visited,
+    &.btn-secondary:focus {
+        background-color: $primary-color !important;
+        border-color: $primary-color !important;
+    }
+}
+
+
+

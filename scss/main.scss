@@ -1,0 +1,52 @@
+@import 'config';
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    font: 15px/1.5 Arial, Helvatica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.highlight {
+    color: $primary-color;
+}
+
+.fa-home {
+    padding-right: 10px;
+    color: $primary-color;
+    font-size: 20px !important;
+    cursor: pointer;
+}
+
+header {
+    margin: auto;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+@import 'navbar';
+@import 'drop-menu';
+@import 'breadcrumbs';
+@import 'category';
+@import 'products';
+@import 'product-view';
+@import 'also-bought';
+@import 'cart';
+@import 'checkout';
+@import 'register';
+@import 'modal-login-register';
+@import 'button';
+@import 'social-media-btn';
+@import 'input-type';
+@import 'footer';
+@import 'media';

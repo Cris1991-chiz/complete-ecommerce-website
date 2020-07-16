@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Checkout View</title>
+    <link rel="stylesheet" href="/scss/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+                integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+
+</head>
+<body>
+    <!-- Navigation Bar-->
+    <div class="main-container">
+        <header id="navbar">
+            <nav>
+                <div class="container">
+                    <ul class="social-media">
+                        <li><a href="contactUs.html"><span class="follow">Follow Us on:</span></a></li>
+                        <li><a href="contactUs.html"><span class="facebook">Facebook </span>
+                        <i class="fa fa-facebook-official"></i></a></li>
+                        <li><a href="contactUs.html"><span class="instagram">Instagram </span>
+                        <i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#" data-toggle="modal" data-target="#userLogin">Login</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#userReg">Register</a></li>
+                        <li><a href="contactUs.html"><span class="contact">Contact Us </span> 
+                        <i class="fa fa-phone"></i></a></li>
+                        <li><a href="checkout.html"><span class="checkout highlight">Checkout </span>
+                        <i class="fa fa-credit-card highlight"></i></a></li>
+                    </ul>
+                </div>
+            </nav>  
+            <div class="search-box">
+                <div class="logo">
+                    <h1 >Shop<span class="highlight"> 'n' Go..</span></h1>
+                </div>
+                <form>
+                    <input type="text" placeholder="search">
+                    <button type="Submit" class="btn btn-secondary add"><i class="fa fa-search"></i></button>
+                </form>
+                <div class="cart-btn">     
+                    <a href="cart.html"><i class="fa fa-shopping-cart"></i></a>
+                    <label for="btn">Shopping Cart<i class="fa fa-caret-down"></i></label>
+                    <ul class="cart-content">
+                        <img src="" alt="">
+                        <li><a href="">Details</a></li>
+                        <li><a href="">Price</a></li>
+                        <li><a href="">Quantity</a></li>
+                        <li><a href="">View Cart</a></li>
+                    </ul>
+                </div> 
+            </div>  
+        </header>
+    <!-- End of Navigation Bar-->
+    <!-- Breadcrumbs-->
+        <div class="breadcrumbs-container">
+            <ul class="breadcrumbs-row">
+                <li class="list"><span class="step">1</span>
+                    <span class="title">SHOPPING CART</span>        
+                </li>
+                <i class="fas fa-shipping-fast"></i>
+                <li class="list"><span class="step">2</span>
+                    <span class="title">PERSONAL-INFO</span>
+                </li>
+                <i class="fas fa-shipping-fast"></i>
+                <li class="list"><span class="step highlight">3</span>
+                    <span class="title highlight">CHECKOUT</span>
+                </li>
+            </ul>
+        </div>
+        <!-- End of Breadcrumbs-->
+        <!-- Checkout Details -->
+        <div class="btn-home"><a href="index.html"><i class="fa fa-home"></i></a><span class="select">Checkout</span></div>
+        <div class="checkout-view-container">
+            <div class="checkout-content">                     
+                <div class="checkout-details">
+                    <div class="cart-nav-title">     
+                        <li class="item-qty-title"><i class="fa fa-shopping-cart"></i><b>2 -</b> Item(s) in Cart</li>
+                        <li class="subtotal"><span>Subtotal: </span>$ 2,400.00 <i class="fa fa-chevron-circle-down" id="arrow-down"></i></li>
+                    </div>
+                    <div class="checkout-incart-container">
+                        <div class="cart" id="cart-item">
+                            <ul class="cart-nav-tag">
+                                <li>Item Price</li>                
+                                <li class="qty">Quantity</li>
+                                <li class="name">Product Name</li>                         
+                            </ul>
+                            <div class="product-incart">           
+                                <div class="incart-details">
+                                    <a href="product-view.html"><img src="images/drone3.jpg" alt=""></a>
+                                    <div class="product-title">
+                                        <p><b>DJI - Phatom 4</b></p>
+                                        <p>This is the description, you have to put it here. Thank you.</p>
+                                    </div>      
+                                </div>
+                                <div class="row-price-qty">
+                                    <div class="col-price-qty">
+                                    <select class="quantity" name="" id="qty">
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                    </select>
+                                    <span class="price">$1,200</span>
+                                    </div>    
+                                </div> 
+                            </div>
+                        </div>          
+                        <div class="cart" id="cart-item">
+                            <ul class="cart-nav-tag">
+                                <li>Item Price</li>                
+                                <li class="qty">Quantity</li>
+                                <li class="name">Product Name</li>                         
+                            </ul>
+                            <div class="product-incart">           
+                                <div class="incart-details">
+                                    <a href="product-view.html"><img src="images/drone3.jpg" alt=""></a>
+                                    <div class="product-title">
+                                        <h5>Brand</h5>
+                                        <p>This is the description, you have to put it here. Thank you.</p>
+                                    </div>      
+                                </div>
+                                <div class="row-price-qty">
+                                    <div class="col-price-qty">
+                                    <select class="quantity" name="" id="qty">
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                    </select>
+                                    <span class="price">$1,200</span>
+                                    </div>    
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <form action="">
+                        <div class="options">
+                            <div class="option-title"><i class="fa fa-plane"></i><span class="select">Select Shipping Method:</span></div>
+                            <div class="btn-option">
+                                <input type="radio" id="ups" name="ups" value="ups">
+                                <span id="ups">UPS Express</span><br></input>
+                                <input type="radio" id="ems" name="ems" value="ems">
+                                <span id="ems">EMS Express</span>- 5~10 days<br></input>
+                            </div>      
+                        </div>
+                        <div class="options">
+                            <div class="option-title"><i class="fa fa-credit-card"></i><span class="select">Select Payment Method:</span></div>
+                            <div class="btn-payment-option">
+                                <div class="btn-radio">
+                                    <input type="radio" id="stripe1" name="stripe" value="stripe">          
+                                    <span id="stripe"><i class="fa fa-cc-stripe" id="stripe1" style="color: #666ee8;"></i></span></input>
+                                </div>
+                                <div class="btn-radio">
+                                    <input type="radio" id="paypal1" name="paypal" value="paypal">
+                                    <span id="paypal"><i class="fa fa-cc-paypal" style="color: #003087;"></i></span></input>
+                                </div>
+                                <div class="btn-radio">
+                                    <input type="radio" id="discover1" name="discover" value="discover">
+                                    <span id="discover"><i class="fa fa-cc-discover" style="color: #ffa500;"></i></span></input>
+                                </div>
+                            </div>           
+                        </div>
+                        <div class="options">
+                        <div class="option-title"><i class="fa fa-credit-card"></i><span class="select">Card Information:</span></div>
+                        <div class="card-info">
+                            <label for="cname">Name on Card</label>
+                            <input type="text" id="cname" name="cardname" placeholder="Cris Panaligan">
+                        </div> 
+                        <div class="card-number">
+                            <div class="card-info">
+                                <label for="cnum">Card number</label>
+                                <input class="card-no" type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444"> 
+                            </div>
+                            <div class="card-info"> 
+                                <label for="expyear">Exp Year</label>
+                                <input type="text" id="expyear" name="expyear" placeholder="2020">
+                            </div>
+                            <div class="card-info"> 
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" name="cvv" placeholder="123">
+                            </div>
+                        </div>
+                        </div>   
+                        <div class="options">              
+                            <div class="option-title"><span class="select">Confirm:</span></i></div>
+                            <input type="checkbox" id="confirm" name="confirm" value="confirm"> 
+                            I have read and accepted the policies of return, refund, 
+                            cancellation and all <a href="">terms and conditions.</a></input>         
+                        </div>
+                        <button type="submit" class="btn btn-secondary add">Checkout</button> 
+                    </form>                                                    
+                </div>
+                <div class="checkout-summary">
+                    <div class="title"><p>Shipping Information</p></div>
+                    <div class="info">
+                        <div class="name">
+                            <p><span><b>Cris Panaligan</b></span></p>
+                        </div>
+                        <div class="information">
+                            <p><span>Billing Address :</span>Blk 127, Lot 27, 29th Ave. East Rembo Makati City Metro Manila Philippines, 1216</p>
+                        </div>
+                        <div class="information">
+                            <p><span>Shipping Address :</span>Blk 127, Lot 27, 29th Ave. East Rembo Makati City Metro Manila Philippines, 1216</p>
+                        </div>
+                        <div class="information">
+                            <p><span>Shipping Method :</span>USPS Express - Saver</p>
+                        </div>
+                        <hr>
+                        <div class="information">
+                            <p><span>Subtotal :</span>$ 2,400.00</p>
+                        </div>
+                        <div class="information">
+                            <p><span>Tax(12%) :</span>$ 288.00</p>
+                        </div>
+                        <div class="information">
+                            <p><span>Discount :</span>$ 10.99</p>
+                        </div>
+                        <hr>
+                        <div class="btn-checkout-row">
+                            <a href="#" class="check btn-checkout">Total : $ 2,677.01</a> 
+                        </div>
+                    </div>
+                    <div class="btn-col">
+                        <div class="coupon">
+                            <input type="text" name="" id="" placeholder="coupon">
+                            <button type="button" class="btn btn-secondary">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Checkout Details -->
+        <!-- Login Modal Section-->
+        <section>
+            <div class="customer-login" id="login"> 
+                <form class="login" action="" method="post">   
+                    <div class="modal fade" id="userLogin">  
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="login-reg-title">
+                                    <h5 class="modal-title">Customer Login</h5>
+                                    <p>Discover Latest products and great deals.</p>
+                                </div>
+                                <span class="close" title="Close Modal" data-dismiss="modal" aria-label="Close">&times;</span>                
+                            </div>
+                            <div class="modal-body">
+                                <div class="container">
+                                    <a href="#" class="fb btn-login-reg">
+                                        <i class="fa fa-facebook fa-fw"></i>Login with Facebook
+                                    </a>
+                                    <a href="#" class="google btn-login-reg"><i class="fa fa-google fa-fw">
+                                        </i>Login with Google+
+                                    </a>  
+                                    <div class="or-div"><span class="or-text">or</span></div>         
+                                    <input type="text" placeholder="Enter Username" name="name" required>
+                
+                                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                    <button type="submit" class="login btn-login-reg">Login</button>
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="modal-footer"> 
+                                <button type="button" class="btn btn-secondary cancel" data-dismiss="modal">Cancel</button>
+                                <span class="psw">Forgot <a href="#">password?</a></span>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- End of Login Modal Section-->
+        <!-- Signup Modal Section-->
+        <section>
+            <div class="customer-reg" id="register"> 
+                <form class="register" action="" method="post">   
+                    <div class="modal fade" id="userReg">  
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="login-reg-title">
+                                    <h5 class="modal-title">Customer Registration</h5>
+                                    <p>Signup on our site now and earn<b> 25 Reward </b>points.</p>
+                                </div>
+                                <span class="close" title="Close Modal" data-dismiss="modal" aria-label="Close">&times;</span>                
+                            </div>
+                            <div class="modal-body">
+                                <div class="container">
+                                    <a href="#" class="fb btn-login-reg">
+                                        <i class="fa fa-facebook fa-fw"></i>Signup with Facebook
+                                    </a>
+                                    <a href="#" class="google btn-login-reg"><i class="fa fa-google fa-fw">
+                                        </i>Signup with Google+
+                                    </a>  
+                                    <div class="or-div"><span class="or-text">or</span></div>
+                                    <a href="register.html" class="signup btn-login-reg">Signup</a> 
+                                </div>
+                            </div>
+                            <div class="modal-footer"> 
+                                <button type="button" class="btn btn-secondary cancel" data-dismiss="modal">Cancel</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- End of Signup Modal Section-->
+    </div>
+    <footer>
+        <p>Cris Web Design, Copyright &copy; 2020</p>
+    </footer>
+    
+    <script src="checkout-cartshow-btn.js" type="text/javascript"></script>
+
+     <!-- Optional JavaScript -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+                 integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+                 integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" 
+                 integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" 
+                 integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</body>
+</html>  

@@ -1,0 +1,174 @@
+/* home navigation */
+.btn-home {
+    margin: 15px 30px 0 30px;
+    font-size: 19px;
+    font-weight: bold;
+    border-bottom: 0.5px solid $border-color-2;
+}
+
+/* cart container */
+.cart-view-container {
+    margin: 20px 10px 0 10px;
+}
+
+.cart-content {
+    display: flex;
+    justify-content: center;
+}
+
+.cart-details {
+    background: $tertiary-color;
+    margin: 0 10px 10px 10px;
+}
+
+/* incart product */
+.incart-container {
+    border-top: none;
+    
+    .cart {
+        border: 0.5px solid $border-color-2;
+        margin-bottom: 10px;
+        
+        ul.cart-nav-tag {
+            overflow: hidden;
+            list-style-type: none;
+            background-color: $background-color;
+            border-bottom: 0.5px solid $border-color-2;
+            margin-bottom: 10px;
+            padding-inline-start: 0;
+
+            .name {
+                float: left;
+            }
+
+            li {    
+                float: right;
+                padding: 4px 30px;
+                font-size: 13px;
+                font-weight: bold;
+            }
+        }
+
+        .product-incart {
+            overflow: hidden;
+            width: 100%;
+
+            .incart-details {
+                display: inline-flex;
+                width: 55%;
+    
+                a img {
+                    width: 100%;
+                    padding-left: 10px;
+                    padding-bottom: 10px;
+                }
+            
+                .product-title {
+                    padding-left: 10px;
+                    padding-right: 15px;
+                    font-size: 15px;
+
+                    p {
+                        margin-bottom: 3px;
+                    }
+
+                    .btn-secondary {
+                        font-size: 11px;
+                        margin-bottom: 2px;
+                        text-transform: uppercase;
+                        margin-top: 5px;
+                    }
+                }
+            }
+
+            .row-price-qty {
+                float: right;
+                
+                .col-price-qty {
+                    display: flex;
+                    padding-right: 40px;
+                    font-size: 14px;
+                }
+
+                .price {
+                    padding-left: 80px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+/* cart summary and cart total */
+.cart-summary {
+    margin: 0 10px;
+    background: $tertiary-color;
+    border: 0.5px solid $border-color-2;
+    height: 480px;
+
+    .title {
+        background: $background-color;
+        padding: 2px 5px;
+        text-align: center;
+    }
+
+    .item {
+        text-align: center;
+        padding: 5px;
+        border-bottom: 0.5px solid $border-color-2;
+        margin-bottom: 5px;
+    }
+
+    p {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .calculation p {
+     
+        span {
+            margin-right: 20px;
+            font-weight: bold;
+        }
+    }
+
+    .btn-col {
+        .btn-checkout {
+            width: 50%;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            margin: 5px 0;
+            display: inline-block;
+            text-decoration: none;
+            font-size: 17px;
+            line-height: 20px;
+            text-align: center;
+            outline: none;
+        
+            &:hover {
+                opacity: $button-opacity;
+            }
+        }
+        
+        .check {
+            background-color: $primary-color;
+            color: $tertiary-color;
+            font-weight: bold;
+        }
+        
+        .paypal {
+            background-color: $paypal-color;
+            color: $tertiary-color;
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        .btn-secondary {
+            font-size: 17px;
+            font-weight: bold;
+            margin-bottom: 2px;
+            text-transform: uppercase;
+        }
+    }
+}

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Cart View</title>
+    <link rel="stylesheet" href="/scss/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+                integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    
+</head>
+<body>
+    <!-- Navigation Bar-->
+    <div class="main-container">
+        <header id="navbar">
+            <nav>
+                <div class="container">
+                    <ul class="social-media">
+                        <li><a href="contactUs.html"><span class="follow">Follow Us on:</span></a></li>
+                        <li><a href="contactUs.html"><span class="facebook">Facebook </span>
+                        <i class="fa fa-facebook-official"></i></a></li>
+                        <li><a href="contactUs.html"><span class="instagram">Instagram </span>
+                        <i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#" data-toggle="modal" data-target="#userLogin">Login</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#userReg">Register</a></li>
+                        <li><a href="contactUs.html"><span class="contact">Contact Us </span> 
+                        <i class="fa fa-phone"></i></a></li>
+                        <li><a href="checkout.html"><span class="checkout">Checkout </span>
+                        <i class="fa fa-credit-card"></i></a></li>
+                    </ul>
+                </div>
+            </nav>  
+            <div class="search-box">
+                <div class="logo">
+                    <h1 >Shop<span class="highlight"> 'n' Go..</span></h1>
+                </div>
+                <form>
+                    <input type="text" placeholder="search..">
+                    <button type="Submit" class="btn btn-secondary add"><i class="fa fa-search"></i></button>
+                </form>
+                <div class="cart-btn">       
+                    <a href="cart.html"><i class="fa fa-shopping-cart"></i></a>
+                    <label for="btn"><span class="highlight">Shopping Cart</span><i class="fa fa-caret-down"></i></label>
+                    <ul class="cart-content">
+                        <img src="" alt="">
+                        <li><a href="">Details</a></li>
+                        <li><a href="">Price</a></li>
+                        <li><a href="">Quantity</a></li>
+                        <li><a href="">View Cart</a></li>
+                    </ul>   
+                </div> 
+            </div>  
+        </header>
+    <!-- End of Navigation Bar-->
+    <!-- Breadcrumbs-->
+        <div class="breadcrumbs-container">
+            <ul class="breadcrumbs-row">
+                <li class="list" class="highlight"><span class="step highlight">1</span>
+                    <span class="title highlight">SHOPPING CART</span>        
+                </li>
+                <i class="fas fa-shipping-fast highlight"></i>
+                <li class="list"><span class="step">2</span>
+                    <span class="title">PERSONAL-INFO</span>
+                </li>
+                <i class="fas fa-shipping-fast"></i>
+                <li class="list"><span class="step">3</span>
+                    <span class="title">CHECKOUT</span>
+                </li>
+            </ul>
+        </div>
+        <!-- End of Breadcrumbs-->
+        <!-- Cart Section-->
+        <div class="btn-home"><a href="index.html"><i class="fa fa-home"></i></a><span class="select">Shopping Cart</span></div>
+        <div class="cart-view-container">     
+            <div class="cart-content">         
+                <div class="cart-details">
+                    <div class="incart-container">
+                        <div class="cart" id="cart-item">
+                            <ul class="cart-nav-tag">
+                                <li>Item Price</li>                
+                                <li class="qty">Quantity</li>
+                                <li class="name">Product Name</li>                         
+                            </ul>
+                            <div class="product-incart">           
+                                <div class="incart-details">
+                                    <a href="product-view.html"><img src="images/drone5.jpg" alt=""></a>
+                                    <div class="product-title">
+                                        <p><b>DJI - Phatom 4</b></p>
+                                        <p>This is the description, you have to put it here. Thank you.</p>
+                                        <button type="submit" class="btn btn-secondary save">Save for Later</button>
+                                        <button type="submit" class="btn btn-secondary">Remove</button>
+                                    </div>      
+                                </div>
+                                <div class="row-price-qty">
+                                    <div class="col-price-qty">
+                                    <select class="quantity" name="" id="qty">
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                    </select>
+                                    <span class="price">$1,200</span>
+                                    </div>    
+                                </div> 
+                            </div>
+                        </div>          
+                        <div class="cart" id="cart-item">
+                            <ul class="cart-nav-tag">
+                                <li>Item Price</li>                
+                                <li class="qty">Quantity</li>
+                                <li class="name">Product Name</li>                         
+                            </ul>
+                            <div class="product-incart">           
+                                <div class="incart-details">
+                                    <a href="product-view.html"><img src="images/drone5.jpg" alt=""></a>
+                                    <div class="product-title">
+                                        <p><b>DJI - Phatom 4</b></p>
+                                        <p>This is the description, you have to put it here. Thank you.</p>
+                                        <button type="submit" class="btn btn-secondary save">Save for Later</button>
+                                        <button type="submit" class="btn btn-secondary">Remove</button>
+                                    </div>      
+                                </div>
+                                <div class="row-price-qty">
+                                    <div class="col-price-qty">
+                                    <select class="quantity" name="" id="qty">
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                    </select>
+                                    <span class="price">$1,200</span>
+                                    </div>    
+                                </div> 
+                            </div>
+                        </div>
+                    </div>                  
+                </div>
+                <div class="cart-summary">
+                    <div class="figures">
+                        <div class="title"><h5>Order Summary</h5></div>
+                        <div class="item"><b>2</b> - Item(s)</div>
+                        <div class="calculation">
+                            <p><span>Subtotal:</span>$ 2,400.00</p>
+                        </div>
+                        <div class="calculation">
+                            <p><span>Tax(12%):</span>$ 288.00</p>
+                        </div>
+                        <div class="calculation">
+                            <p><span>Discount:</span>$ 10.99</p>
+                        </div>
+                        <hr>
+                        <div class="calculation">
+                            <p><span class="total">Cart Total:</span> $ 2,677.01</p>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="btn-col">
+                        <div class="cart-btn-checkout">
+                            <a href="checkout.html" class="check btn-checkout">CHECKOUT</a> 
+                            <p>-or-</p>
+                            <a href="checkout.html" class="paypal btn-checkout">PAYPAL</a> 
+                        </div>
+                        <div class="coupon">
+                            <input type="text" name="" id="" placeholder="coupon">
+                            <button type="button" class="btn btn-secondary">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Cart Section-->
+        <!-- Login Modal Section-->
+         <section>
+            <div class="customer-login" id="login"> 
+                <form class="login" action="" method="post">   
+                    <div class="modal fade" id="userLogin">  
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="login-reg-title">
+                                    <h5 class="modal-title">Customer Login</h5>
+                                    <p>Discover Latest products and great deals.</p>
+                                </div>
+                                <span class="close" title="Close Modal" data-dismiss="modal" aria-label="Close">&times;</span>                
+                            </div>
+                            <div class="modal-body">
+                                <div class="container">
+                                    <a href="#" class="fb btn-login-reg">
+                                        <i class="fa fa-facebook fa-fw"></i>Login with Facebook
+                                    </a>
+                                    <a href="#" class="google btn-login-reg"><i class="fa fa-google fa-fw">
+                                        </i>Login with Google+
+                                    </a>  
+                                    <div class="or-div"><span class="or-text">or</span></div>         
+                                    <input type="text" placeholder="Enter Username" name="name" required>
+                
+                                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                    <button type="submit" class="login btn-login-reg">Login</button>
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="modal-footer"> 
+                                <button type="button" class="btn btn-secondary cancel" data-dismiss="modal">Cancel</button>
+                                <span class="psw">Forgot <a href="#">password?</a></span>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- End of Login Modal Section-->
+        <!-- Signup Modal Section-->
+        <section>
+            <div class="customer-reg" id="register"> 
+                <form class="register" action="" method="post">   
+                    <div class="modal fade" id="userReg">  
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="login-reg-title">
+                                    <h5 class="modal-title">Customer Registration</h5>
+                                    <p>Signup on our site now and earn<b> 25 Reward </b>points.</p>
+                                </div>
+                                <span class="close" title="Close Modal" data-dismiss="modal" aria-label="Close">&times;</span>                
+                            </div>
+                            <div class="modal-body">
+                                <div class="container">
+                                    <a href="#" class="fb btn-login-reg">
+                                        <i class="fa fa-facebook fa-fw"></i>Signup with Facebook
+                                    </a>
+                                    <a href="#" class="google btn-login-reg"><i class="fa fa-google fa-fw">
+                                        </i>Signup with Google+
+                                    </a>  
+                                    <div class="or-div"><span class="or-text">or</span></div>
+                                    <a href="register.html" class="signup btn-login-reg">Signup</a> 
+                                </div>
+                            </div>
+                            <div class="modal-footer"> 
+                                <button type="button" class="btn btn-secondary cancel" data-dismiss="modal">Cancel</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- End of Signup Modal Section-->
+    </div>
+    <footer>
+        <p>Cris Web Design, Copyright &copy; 2020</p>
+    </footer>
+    
+    <!-- Optional JavaScript -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" 
+                integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" 
+                integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</body>
+</html>  
