@@ -1,7 +1,21 @@
+/* On screens that are 1300px wide or less*/
+@media screen and (max-width: 1300px) {
+  .row-category-btn {
+    width: 865px;
+  }
+}
+
+/* On screens that are 1170px wide or less*/
+@media screen and (max-width: 1170px) {
+  .products-container {
+    width: 615px;
+  }
+
+}
 /* On screens that are 992px wide or less*/
 @media screen and (max-width: 992px) {
-  .products {   
-    width: 40%;
+  .products-container {
+    width: 415px;
   }
 
   .col-product-container {
@@ -20,6 +34,18 @@
 
   .category-container {
     width: 100%;
+  }
+
+  .row-category-btn {
+    width: 500px;
+  }
+
+  .row-category-btn {
+    .btn-primary {
+      width: 150px;
+      height: 40px;
+      font-size: 17px;   
+    }
   }
 
   .incart-container { 
@@ -109,23 +135,8 @@
     }   
   }
 
-  .column{
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
   .vertical-banner {
-    height: 590px;
-    width: 400px;
-  }
-
-  .row-category-btn {
-    .btn-primary {
-      width: 150px;
-      height: 40px;
-      font-size: 18px;
-      
-    }
+    width: 150px;
   }
 
   .cart-content {
@@ -164,8 +175,15 @@
 /* On screens that are 600px wide or less*/
 @media screen and (max-width: 600px) {
   .vertical-banner {
-    height: 505px;
-    width: 400px;
+    width: 120px;
+  }
+
+  .products-container {
+    width: 275px;
+  }
+  
+  .products {   
+    width: 130px;
   }
 
   .drop-menu-container {
@@ -176,21 +194,24 @@
       display: none;     
     }
   }
-
-  .row-category-btn {
-    .btn-primary {
-      width: 85px;
-      height: 35px;
-      font-size: 10px;
-      margin-left: 5px;
-    }
-  }
 }
 
 /* On screens that are 500px wide or less*/
 @media screen and (max-width: 510px) {
   #productslider {
     width: 330px;
+  }
+
+  .row-category-btn {
+    width: 290px;
+  }
+
+  .row-category-btn {
+    .btn-primary {
+      width: 80px;
+      height: 30px;
+      font-size: 9px;   
+    }
   }
 
   .breadcrumbs-row {
@@ -269,8 +290,24 @@
       }
     }
   }
+
+  .category-container {
+
+    li {      
+        font-size: 17px; 
+    }
+}
+
+  .vertical-banner {
+    width: 130px;
+  }
+
+  .products-container {
+    width: 150px;
+  }
+
   .products {   
-    width: 80%;
+    width: 150px;
   }
 
   .details h5 {

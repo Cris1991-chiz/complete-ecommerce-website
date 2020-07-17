@@ -1,14 +1,16 @@
 .col-product-container {
     display: flex;
-    width: 80%;
-    margin-right: auto;
+    width: 90%;
     margin-left: auto;
+    margin-right: auto;
     margin-top: 20px;
+    justify-content: center;
 }
 
 .vertical-banner {
     border: 0.5px solid $border-color-2;
     margin-top: 20px;
+    width: 250px;
    
     ul {
         background: $button-1;
@@ -29,22 +31,24 @@
         padding: 5px;
         display: block;
         width: 100%;
-    }
-   
+    } 
 }
 
 .products-container {
     margin-top: 20px;
     padding-left: 1px;
+    width: 820px;
 }
 
 .column{
    display: flex;
+   flex-wrap: wrap;
 }
 
 .products {
     border: 0.5px solid $border-color-2;
     margin: 1px;
+    width: 200px;
 }
 
 .img-container {
